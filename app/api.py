@@ -30,7 +30,9 @@ for adapter in adapters:
 
 cb = ChatBot(
     'Bot',
-    logic_adapers=_adapters
+    logic_adapers=_adapters,
+    storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
+    database_uri=DB_URL
 )
 
 # trainer = ChatterBotCorpusTrainer(cb)
