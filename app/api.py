@@ -103,8 +103,8 @@ trainer.train(xibaozi)
 
 config.read(config_file)
 
-@router.post('/msg')
-@router.get('/msg')
+@router.post('/')
+@router.get('/')
 async def chatbot_api_get(query: str):
     '''
     **A Succesful Request would return:**\n
