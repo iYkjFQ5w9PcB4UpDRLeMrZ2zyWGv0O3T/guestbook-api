@@ -15,10 +15,6 @@ PORT = environ.get('PORT', None)
 
 router = FastAPI()
 
-config_file = f"chatbot.ini"
-config = ConfigParser()
-config.read(config_file)
-
 adapters = [
     'BestMatch',
     'LogicAdapter',
@@ -101,7 +97,6 @@ xibaozi = [
 ]
 trainer.train(xibaozi)
 
-config.read(config_file)
 
 @router.post('/')
 @router.get('/')
