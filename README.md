@@ -6,7 +6,7 @@ This repository contains code for the Guestbook API built in our ongoing [video 
 
 Deploy your application with one click:
 
-[![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/okteto/https://github.com/okteto/guestbook-api)
+[![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/iYkjFQ5w9PcB4UpDRLeMrZ2zyWGv0O3T/guestbook-api)
 
 Alternatively, you can deploy your application by first cloning the repository, then running the command below:
 
