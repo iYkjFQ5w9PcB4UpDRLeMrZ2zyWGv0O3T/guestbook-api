@@ -105,7 +105,7 @@ config.read(config_file)
 
 @router.post('/')
 @router.get('/')
-async def chatbot_api_get(query: str):
+async def welcome(query: str):
     '''
     **A Succesful Request would return:**\n
     - __response:__   fills in the nested json with in this query\n
@@ -119,11 +119,10 @@ async def chatbot_api_get(query: str):
     - __Response__ [`422`] - Unprocessable Entity
     '''
     start = time.time()
-    msg_query = await cb.get_response(query)
     return {
         'response': {
             'user' : query,
-            'bot': str(msg_query),
+            'bot': str(cb.get_response(query)),
             'time_taken': str(f'{(round((time.time() - start)* 1000, 3))}ms')
         }
     }
