@@ -33,17 +33,17 @@ cb = ChatBot(
     logic_adapers=_adapters
 )
 
-trainer = ChatterBotCorpusTrainer(cb)
+# trainer = ChatterBotCorpusTrainer(cb)
 
-trainer.train(
-    # Uncomment each line to train from chatterbot's corpus
-    # 'chatterbot.corpus.english',
-    'chatterbot.corpus.chinese',
-    'chatterbot.corpus.chinese.greetings',
-    'chatterbot.corpus.chinese.conversations'
-    # 'chatterbot.corpus.spanish',
-    # 'chatterbot.corpus.italian'
-)
+# trainer.train(
+# #     # Uncomment each line to train from chatterbot's corpus
+# #     # 'chatterbot.corpus.english',
+# #     'chatterbot.corpus.chinese',
+# #     'chatterbot.corpus.chinese.greetings',
+# #     'chatterbot.corpus.chinese.conversations'
+# #     # 'chatterbot.corpus.spanish',
+# #     # 'chatterbot.corpus.italian'
+# )
 trainer = ListTrainer(cb)
 xibaozi = [
     "我蚌埠住了!",
