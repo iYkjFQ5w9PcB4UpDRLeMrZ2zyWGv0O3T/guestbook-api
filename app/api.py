@@ -36,7 +36,7 @@ cb = ChatBot(
     'Bot',
     logic_adapers=_adapters,
     storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
-    database_uri='mongodb://mongodb:27017'
+    database_uri='mongodb://127.0.0.1:27017'
 )
 
 trainer = ChatterBotCorpusTrainer(cb)
