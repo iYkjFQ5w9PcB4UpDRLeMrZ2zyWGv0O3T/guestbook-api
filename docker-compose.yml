@@ -6,7 +6,8 @@ services:
     ports:
       - 8080:8080
     environment:
-      - NONGNO_DETAILS=${{ MONGO_DETAILS }}
+      - DB_URL=${{ MONGO_DETAILS }}
+      - PORT=8080
 
   mongodb:
     image: bitnami/mongodb:latest
